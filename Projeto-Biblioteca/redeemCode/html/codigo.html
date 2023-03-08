@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código | BigLibrary</title>
+    <link rel="stylesheet" href="/redeemCode/css/stylecodigo.css">
+</head>
+<body>
+    <div class="whalpapper">
+        <div class="container">
+            <div>
+                <img src="https://m.media-amazon.com/images/I/51UzT2tGKjL._SY344_BO1,204,203,200_QL70_ML2_.jpg">
+            </div>
+            <div>
+                <span class = "product-name">Malala,</span>
+            </div>   
+            <div>
+                <span class="nameDescrition">A menina que queria ir para a escola</span>
+            </div>
+            <div>
+                <button class="reserve-ja" onclick="gerar()">Concluir Reserva</button>
+            </div>
+            <br>
+            <p id="number">Nº da Reserva:</p>
+            <div id="num"></div>
+            <div id="resp"></div>
+            <script type="text/javascript"> 
+                function gerar()
+                {
+                var num = document.getElementById('num');
+                var resp = document.getElementById('resp');
+                    num.innerHTML = Math.floor(Math.random() * 99999);
+                    resp.innerHTML = "<br>Livro Reservado com Sucesso, compareça a biblioteca para retirada.";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
