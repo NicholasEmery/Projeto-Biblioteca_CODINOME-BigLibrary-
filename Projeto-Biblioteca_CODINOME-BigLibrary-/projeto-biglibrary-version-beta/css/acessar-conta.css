@@ -1,0 +1,52 @@
+body {
+  font-family: Arial,helvetica,Sans-Serif;
+  background-color: rgb(55, 56, 58);
+}
+
+div {
+  background-color:Grey;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 70px;
+  border-radius:15px;
+  color:white;
+}
+
+button {
+  background-color:dodgerblue;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 2px 2px rgb(53, 51, 51);
+  padding:15px;
+  position: relative;
+  left: 130px;
+  width: 50%;
+  color:white;
+  font-size:15px;
+}
+
+button:hover {
+  background-color: rgb(37, 58, 65);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#bt {
+  position: relative;
+  top: 10px;
+}
+
+h1 {
+font-size: 25px;
+width: 510px;
+text-align: center;
+}
+
+p {
+  color: rgb(39, 37, 37);
+  font-size: 18px;
+  width: 450px;
+  margin-left: 30px;
+}

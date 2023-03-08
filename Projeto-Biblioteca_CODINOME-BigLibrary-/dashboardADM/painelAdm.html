@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleAdm.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+    <title>Painel ADM BETA</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <img class="img" src="image/bg-white.png" alt="" />
+        <div class="logo_name">BigLibrary</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Procurar" />
+          <span class="tooltip">Pesquisar</span>
+        </li>
+        <li>
+          <button class="buttonPainel" id="btnActive">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Painel</span>
+          </button>
+          <span class="tooltip">Painel</span>
+        </li>
+        <li>
+          <button class="buttonUsers">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Usúarios Cadastrados</span>
+          </button>
+          <span class="tooltip">Usúarios</span>
+        </li>
+        <li>
+          <button class="buttonMsg">
+            <i class="bx bx-chat"></i>
+            <span class="links_name">Menssagens</span>
+          </button>
+          <span class="tooltip">Menssagens</span>
+        </li>
+        <li>
+          <button class="buttonAnalytics">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Análises</span>
+          </button>
+          <span class="tooltip">Análises</span>
+        </li>
+        <li>
+          <button class="buttonBooks">
+            <i class="bx bx-book"></i>
+            <span class="links_name">Cadastro de Livros</span>
+          </button>
+          <span class="tooltip">Livros</span>
+        </li>
+
+        <!-- <li>
+          <button class="buttonMenu">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Saved</span>
+          </button>
+          <span class="tooltip">Saved</span>
+        </li> -->
+        <li>
+          <button class="buttonConfig">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Configurações</span>
+          </button>
+          <span class="tooltip">Configurações</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <img src="image/perfil-padrão.png" alt="profileImg" />
+            <div class="name_job">
+              <div class="name">Nicholas Emery</div>
+              <div class="job">Administrador</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <header class="header-menu">
+        <a href="#">
+          <div class="logo-details">
+            <i class="fa-regular fa-circle-left"></i>
+            <div class="logo_name">Voltar</div>
+          </div>
+        </a>
+        <div class="div-profile-menu">
+          <img
+            class="img-perfil"
+            src="image/perfil-padrão.png"
+            alt="img-perfil"
+          />
+          <div class="tooltipProfile">
+            <ul>
+              <li id="li-perfil"><span>Perfil</span></li>
+              <hr size="1" />
+              <li id="li-config"><span>Sair</span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="div-painel">
+        <p>Painel</p>
+      </div>
+      <div class="div-users">
+        <p>Users</p>
+      </div>
+      <div class="div-msg">
+        <p>Menssagens</p>
+      </div>
+      <div class="div-analytics">
+        <p>Analytics</p>
+      </div>
+      <div class="div-books">
+        <main>
+          <div class="div-button">
+            <button
+              type="button"
+              class="button blue mobile"
+              id="cadastrarCliente"
+            >
+              Cadastrar Livros
+            </button>
+          </div>
+          <table id="tableClient" class="records">
+            <thead>
+              <tr>
+                <th>Imagem Frente/Verso</th>
+                <th>Nome</th>
+                <th>Autor</th>
+                <th>Lançamento</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <div class="modal-div">
+                <h2>Novo Livro</h2>
+                <span class="modal-close" id="modalClose">&#10006;</span>
+              </div>
+              <form id="form" class="modal-form">
+                <div class="div-inserir-livro">
+                  <label for="inputFileLivro" id="input-inserir-livro"
+                    >Insira uma Imagem</label
+                  >
+                  <input
+                    id="inputFileLivro"
+                    type="file"
+                    accept="image/png, image/jpeg"
+                    required
+                  />
+                </div>
+                <div class="div-inputs">
+                  <input
+                    type="text"
+                    id="livro"
+                    data-index="new"
+                    class="modal-field"
+                    placeholder="Nome do Livro"
+                    required
+                  />
+                  <div id="div-inserir-autor">
+                    <label for="inputFileAutor" id="input-inserir-autor">
+                      <div id="hover">Inserir</div>
+                      <img src="image/perfil-padrão.png"
+                    /></label>
+                    <input
+                      type="file"
+                      id="inputFileAutor"
+                      accept="image/png, image/jpeg"
+                    />
+                    <input
+                      type="text"
+                      id="autor"
+                      class="modal-field"
+                      placeholder="Nome do Autor"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="date"
+                    id="lançamento"
+                    class="modal-field"
+                    placeholder="Ano de Lançamento"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="descricao"
+                    class="modal-field"
+                    placeholder="Descrição do Livro"
+                    required
+                  />
+                </div>
+              </form>
+              <footer class="modal-footer">
+                <button id="salvar" class="button green">Salvar</button>
+                <button id="cancelar" class="button blue">Cancelar</button>
+              </footer>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="div-config">
+        <p>Configurações</p>
+      </div>
+    </section>
+    <script src="js/scriptAdm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e0f8f28f17.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

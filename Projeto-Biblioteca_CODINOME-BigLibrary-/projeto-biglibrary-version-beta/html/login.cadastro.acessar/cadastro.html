@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadatrar | BigLibrary</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <div>
+        <h1>
+            Cadastre-se Aqui
+        </h1>
+        <textemail id="boxemail">
+            <p id="textemail">
+                Email:
+            </p>
+            <input id="inputemail" size="40" maxlength="50" type="text" placeholder="Digite seu Email">
+        </textemail>
+        <br>
+        <textn id="textn">
+            <p id="text">
+                Nome:
+            </p>
+            <input type="text" placeholder="Digite seu Nome">
+        </textn>
+        <br>
+        <textso id="textso">
+            <p id="text">
+                Sobrenome:
+            </p>
+            <input type="text" placeholder="Digite seu Sobrenome">
+        </textso>
+        <br>
+        <texts id="texts">
+            <p id="text">
+                Senha:
+            </p>        
+            <input id="password1" maxlength="20" type="password" placeholder="Digite sua Senha">
+        </texts>    
+        <img id="icon1" onclick="showHide1()" src="/html/login.cadastro.acessar/img/hide.png">
+        <textco id="textco">
+            <p id="textconf">
+                Confirme sua Senha:
+            </p>
+            <input id="password2" maxlength="20" type="password" placeholder="Digite Novamente">
+        </textco>
+        <img id="icon2" onclick="showHide2()" src="/html/login.cadastro.acessar/img/hide.png">  
+        <a href="acessar-conta.html">
+            <button>
+                Criar conta
+            </button>
+        </a>
+    </div>
+    <a href="/html/login.cadastro.acessar/login.html">
+        <i id="btnvoltar" class="fa-solid fa-arrow-left"></i>
+    </a>
+    <script src="https://kit.fontawesome.com/e0f8f28f17.js" crossorigin="anonymous"></script>
+    <script src="/js/cadastro.js"></script>
+</body>
+</html>
