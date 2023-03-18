@@ -59,7 +59,7 @@ window.onload = () =>{
     document.querySelector('.header .header-2').classList.remove('active');
   }
 
-  fadeOut();
+  // fadeOut();
 
 }
 
@@ -81,3 +81,15 @@ btnLMenos.addEventListener("click", () => {
 });
 
 
+const btnBuy = document.querySelector('.buy-now-btn');
+const divForm = document.querySelector('.form-background');
+
+btnBuy.addEventListener('click', () => {
+  divForm.style.display = 'block';
+});
+
+const btnClose = document.querySelector('.close-form');
+
+btnClose.addEventListener('click', () => {
+  divForm.style.display = 'none';
+});

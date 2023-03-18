@@ -101,16 +101,31 @@
         <p>Não tem uma conta? <a href="#">cadastre-se aqui</a></p>
       </form>
     </div>
+
+    <!-- login form -->
     <div class="form-background">
+      <div class="close-form"><i class="fa-solid fa-x"></i></div>
       <div class="form-container">
         <h2>Preencha os Dados a Abaixo:</h2>
         <form>
           <label for="name">Nome:</label>
-          <input class="allInput" id="name" type="text" maxlenght="10" required />
+          <input
+            class="allInput"
+            id="name"
+            type="text"
+            maxlenght="10"
+            required
+          />
           <label for="email">Email:</label>
           <input class="allInput" id="email" type="email" required />
           <label for="matricula">Número da Matricula:</label>
-          <input class="allInput" id="matricula" type="text" maxlength="10" required />
+          <input
+            class="allInput"
+            id="matricula"
+            type="text"
+            maxlength="10"
+            required
+          />
           <label for="series">Série:</label>
           <select class="allInput" id="series">
             <option value="1ºANO">1º ANO</option>
@@ -125,9 +140,9 @@
           </select>
           <label for="data1">Escolha uma data para reservar o seu livro:</label>
           <input class="allInput" type="date" name="" id="data1" />
-          <label for="data2">Escolha uma data para entregar o livro:</label>
-          <input class="allInput" type="date" name="" id="data2" />
-          <button class="buttonSubmit allInput" id="btnSubmit" type="submit">Enviar Dados</button>
+          <button class="buttonSubmit allInput" id="btnSubmit" type="submit">
+            Enviar Dados
+          </button>
         </form>
       </div>
     </div>
@@ -205,17 +220,15 @@
               <button type="button" class="add-cart-btn">
                 <i class="fas fa-heart"></i>Adicionar aos Favoritos
               </button>
-              <a href="/redeemCode/html/codigo.html">
-                <button type="button" class="buy-now-btn">
-                  <i class="fas fa-solid fa-calendar-days"></i>Reservar Agora
-                </button>
-              </a>
+              <button type="button" class="buy-now-btn">
+                <i class="fas fa-solid fa-calendar-days"></i>Reservar Agora
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <script
       src="https://kit.fontawesome.com/e0f8f28f17.js"
       crossorigin="anonymous"

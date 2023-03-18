@@ -557,9 +557,7 @@ img {
 
 
 .form-background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
@@ -578,6 +576,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 235px auto;
 }
 
 .form-background .form-container form {
