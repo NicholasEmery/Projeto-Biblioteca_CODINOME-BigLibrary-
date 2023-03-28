@@ -557,13 +557,21 @@ img {
 
 
 .form-background {
-  display: none;
+  display: flex;
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
   z-index: 10000;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-background .close-form {
+  display: flex;
+  flex-direction: row;
 }
 
 .form-background .form-container {
@@ -576,7 +584,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 235px auto;
+  /* margin: 235px auto; */
 }
 
 .form-background .form-container form {
