@@ -1,239 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      BigLibrary | Detalhes do Livro | Malala, a Menina que Queria ir Para a
-      Escola
-    </title>
 
-    <link rel="stylesheet" href="cssBookDetails/styleProductDetails.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    BigLibrary | Detalhes do Livro | Malala, a Menina que Queria ir Para a
+    Escola
+  </title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-1">
-        <!-- Logo do Menu -->
-        <a href=" " class="logo">
-          <img id="logo-img" src="images/logohl.jpg" />
-          <span class="name-logo">BigLibrary</span>
-        </a>
+  <link rel="stylesheet" href="cssBookDetails/styleProductDetails.css" />
 
-        <!-- Botão de Busca -->
-        <form action="" class="search-form">
-          <input type="search" name="" placeholder="Procurar" id="search-box" />
-          <label for="search-box" class="fas fa-search"></label>
-        </form>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <!-- Icones: Favoritos, Sacola e Login -->
-        <div class="icons">
-          <div id="search-btn" class="fas fa-search"></div>
-          <div id="login-btn" class="fas fa-user"></div>
-          <a href="#" class="fas fa-heart"></a>
-          <a
-            href="/dashboardADM/html/painelAdm.html"
-            class="fa-solid fa-user-shield"
-            id="iconeAdm"
-          ></a>
-        </div>
+<body>
+  <header class="header">
+    <div class="header-1">
+      <!-- Logo do Menu -->
+      <a href=" " class="logo">
+        <img id="logo-img" src="images/logohl.jpg" />
+        <span class="name-logo">BigLibrary</span>
+      </a>
+
+      <!-- Botão de Busca -->
+      <form action="" class="search-form">
+        <input type="search" name="" placeholder="Procurar" id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <!-- Icones: Favoritos, Sacola e Login -->
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="/dashboardADM/html/painelAdm.html" class="fa-solid fa-user-shield" id="iconeAdm"></a>
       </div>
+    </div>
 
-      <!-- Menu NavBar -->
-      <div class="header-2">
-        <nav class="navbar">
-          <a href="#home">Inicio</a>
-          <a href="#featured">Destaques</a>
-          <a href="#arrivals">Recomendados</a>
-          <a href="#reviews">Avaliações</a>
-        </nav>
+    <!-- Menu NavBar -->
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#featured">Destaques</a>
+        <a href="#arrivals">Recomendados</a>
+        <a href="#reviews">Avaliações</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header section Fim -->
+
+  <!-- Botões NavBar Mobile -->
+  <nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="/dashboardADM/html/painelAdm.html" class="fa-solid fa-user-shield"></a>
+  </nav>
+
+  <!-- login formulario  -->
+  <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+      <h3>Faça Login</h3>
+      <span>Email</span>
+      <input type="email" name="" class="box" placeholder="Digite seu Email" />
+      <span>Senha</span>
+      <input type="password" name="" class="box" placeholder="Digite sua Senha" />
+      <div class="checkbox">
+        <input type="checkbox" name="" id="remember-me" />
+        <label for="remember-me">Lembre-se de mim </label>
       </div>
-    </header>
+      <input type="submit" value="Entrar" class="btn" />
+      <p>Esqueceu a Senha? <a href="#">clique aqui</a></p>
+      <p>Não tem uma conta? <a href="#">cadastre-se aqui</a></p>
+    </form>
+  </div>
 
-    <!-- header section Fim -->
+  <div class="background-img">
+    <div class="navbar-img">
+      <div class="close-bgImg"><i class="fa-solid fa-x"></i></div>
+    </div>
+    <div class="container-img">
+      <img id="imgFrente" src="images/book2_malala,aMeninaQueQueriaIrParaAEscola.png" tabindex="0" alt="">
+    </div>
+  </div>
 
-    <!-- Botões NavBar Mobile -->
-    <nav class="bottom-navbar">
-      <a href="#home" class="fas fa-home"></a>
-      <a href="#featured" class="fas fa-list"></a>
-      <a href="#arrivals" class="fas fa-tags"></a>
-      <a href="#reviews" class="fas fa-comments"></a>
-      <a
-        href="/dashboardADM/html/painelAdm.html"
-        class="fa-solid fa-user-shield"
-      ></a>
-    </nav>
-
-    <!-- login formulario  -->
-    <div class="login-form-container">
-      <div id="close-login-btn" class="fas fa-times"></div>
-
-      <form action="">
-        <h3>Faça Login</h3>
-        <span>Email</span>
-        <input
-          type="email"
-          name=""
-          class="box"
-          placeholder="Digite seu Email"
-        />
-        <span>Senha</span>
-        <input
-          type="password"
-          name=""
-          class="box"
-          placeholder="Digite sua Senha"
-        />
-        <div class="checkbox">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me">Lembre-se de mim </label>
-        </div>
-        <input type="submit" value="Entrar" class="btn" />
-        <p>Esqueceu a Senha? <a href="#">clique aqui</a></p>
-        <p>Não tem uma conta? <a href="#">cadastre-se aqui</a></p>
+  <!-- login form --->
+  <div class="form-background">
+    <div class="form-container">
+      <div class="close-form"><i class="fa-solid fa-x"></i></div>
+      <h2>Preencha os Dados a Abaixo:</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input class="allInput" id="name" type="text" maxlenght="10" required />
+        <label for="email">Email:</label>
+        <input class="allInput" id="email" type="email" required />
+        <label for="matricula">Número da Matricula:</label>
+        <input class="allInput" id="matricula" type="text" maxlength="10" required />
+        <label for="series">Série:</label>
+        <select class="allInput" id="series">
+          <option value="1ºANO">1º ANO</option>
+          <option value="2ºANO">2º ANO</option>
+          <option value="3ºANO">3º ANO</option>
+        </select>
+        <label for="turno">Turno:</label>
+        <select class="allInput" name="" id="turno">
+          <option value="Manha">Manhã</option>
+          <option value="Tarde">Tarde</option>
+          <option value="Noite">Noite</option>
+        </select>
+        <label for="data1">Escolha uma data para reservar o seu livro:</label>
+        <input class="allInput" type="date" name="" id="data1" />
+        <button class="buttonSubmit allInput" id="btnSubmit" type="submit">
+          Enviar Dados
+        </button>
       </form>
     </div>
-
-    <!-- login form -->
-    <div class="form-background">
-      <div class="close-form"><i class="fa-solid fa-x"></i></div>
-      <div class="form-container">
-        <h2>Preencha os Dados a Abaixo:</h2>
-        <form>
-          <label for="name">Nome:</label>
-          <input
-            class="allInput"
-            id="name"
-            type="text"
-            maxlenght="10"
-            required
-          />
-          <label for="email">Email:</label>
-          <input class="allInput" id="email" type="email" required />
-          <label for="matricula">Número da Matricula:</label>
-          <input
-            class="allInput"
-            id="matricula"
-            type="text"
-            maxlength="10"
-            required
-          />
-          <label for="series">Série:</label>
-          <select class="allInput" id="series">
-            <option value="1ºANO">1º ANO</option>
-            <option value="2ºANO">2º ANO</option>
-            <option value="3ºANO">3º ANO</option>
-          </select>
-          <label for="turno">Turno:</label>
-          <select class="allInput" name="" id="turno">
-            <option value="Manha">Manhã</option>
-            <option value="Tarde">Tarde</option>
-            <option value="Noite">Noite</option>
-          </select>
-          <label for="data1">Escolha uma data para reservar o seu livro:</label>
-          <input class="allInput" type="date" name="" id="data1" />
-          <button class="buttonSubmit allInput" id="btnSubmit" type="submit">
-            Enviar Dados
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="main-wrapper">
-      <div class="container">
-        <div class="product-div">
-          <div class="product-div-left">
-            <div class="img-container">
-              <img
-                src="https://m.media-amazon.com/images/I/51UzT2tGKjL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                alt="watch"
-              />
-            </div>
-            <div class="hover-container">
-              <div>
-                <img
-                  src="https://m.media-amazon.com/images/I/51UzT2tGKjL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://m.media-amazon.com/images/I/91S1BpOHZIL.jpg"
-                />
-              </div>
+  </div>
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="product-div">
+        <div class="product-div-left">
+          <div class="img-container">
+            <img id="imgContainer" src="https://m.media-amazon.com/images/I/51UzT2tGKjL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+            alt="watch" />
+            <div class="divBtnImg">
+              <button>
+                <i class="fas fa-expand btn-espand"></i>
+              </button>
             </div>
           </div>
-          <div class="product-div-right">
-            <span class="product-name">Malala,</span>
-            <span class="nameDescrition"
-              >A menina que queria ir para a escola</span
-            >
-            <div class="autor">
-              <p>Autor(a):</p>
-              <a id="name-autor" href="#">
-                <p>Adriana Carranca</p>
-              </a>
+          <div class="hover-container">
+            <div>
+              <img src="https://m.media-amazon.com/images/I/51UzT2tGKjL._SY344_BO1,204,203,200_QL70_ML2_.jpg" />
             </div>
-            <span id="avaliações">Avaliações:</span>
-            <div class="product-rating">
-              <span><i class="fas fa-star"></i></span>
-              <span><i class="fas fa-star"></i></span>
-              <span><i class="fas fa-star"></i></span>
-              <span><i class="fas fa-star"></i></span>
-              <span><i class="fas fa-star-half-alt"></i></span>
-              <span>(350 Avaliações)</span>
+            <div>
+              <img src="https://m.media-amazon.com/images/I/91S1BpOHZIL.jpg" />
             </div>
-            <p id="descrição">Descrição:</p>
-            <p id="product-description">
-              Malala Yousafzai quase perdeu a vida por querer ir para a escola.
-              Ela nasceu no vale do Swat, no Paquistão, uma região de
-              extraordinária beleza, cobiçada no passado por conquistadores como
-              Gengis Khan e Alexandre, o Grande, e protegida pelos bravos
-              guerreiros pashtuns – os povos das montanhas. Foi habitada por
-              reis e rainhas, príncipes e princesas, como nos contos de fadas.
-              Malala cresceu entre os corredores da escola de seu pai, Ziauddin
-              Yousafzai, e era uma das primeiras alunas da classe. Quando tinha
-              dez anos viu sua cidade ser controlada por um grupo extremista
-              chamado Talibã. Armados, eles vigiavam o vale noite e dia, e
-              impuseram muitas regras. Proibiram a música e a dança, baniram as
-              mulheres das ruas e determinaram que somente os meninos poderiam
-              estudar. Mas Malala foi ensinada desde pequena a defender aquilo
-              em que acreditava e lutou pelo direito de continuar estudando. Ela
-              fez das palavras sua arma. Em 9 de outubro de 2012, quando voltava
-              de ônibus da escola, sofreu um atentado a tiro. Poucos acreditaram
-              que ela sobreviveria. A jornalista Adriana Carranca visitou o vale
-              do Swat dias depois do atentado, hospedou-se com uma família local
-              e conta neste livro tudo o que viu e aprendeu por lá. Ela
-              apresenta às crianças a história real dessa menina que, além de
-              ser a mais jovem ganhadora do prêmio Nobel da paz, é um grande
-              exemplo de como uma pessoa e um sonho podem mudar o mundo.
-            </p>
-            <button class="btnLMais">Ler Mais</button>
-            <button class="btnLMenos">Ler Menos</button>
-            <div class="btn-groups">
-              <button type="button" class="add-cart-btn">
-                <i class="fas fa-heart"></i>Adicionar aos Favoritos
-              </button>
-              <button type="button" class="buy-now-btn">
-                <i class="fas fa-solid fa-calendar-days"></i>Reservar Agora
-              </button>
-            </div>
+          </div>
+        </div>
+        <div class="product-div-right">
+          <span class="product-name">Malala,</span>
+          <span class="nameDescrition">A menina que queria ir para a escola</span>
+          <div class="autor">
+            <p>Autor(a):</p>
+            <a id="name-autor" href="#">
+              <p>Adriana Carranca</p>
+            </a>
+          </div>
+          <span id="avaliações">Avaliações:</span>
+          <div class="product-rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star-half-alt"></i></span>
+            <span>(350 Avaliações)</span>
+          </div>
+          <p id="descrição">Descrição:</p>
+          <p id="product-description">
+            Malala Yousafzai quase perdeu a vida por querer ir para a escola.
+            Ela nasceu no vale do Swat, no Paquistão, uma região de
+            extraordinária beleza, cobiçada no passado por conquistadores como
+            Gengis Khan e Alexandre, o Grande, e protegida pelos bravos
+            guerreiros pashtuns – os povos das montanhas. Foi habitada por
+            reis e rainhas, príncipes e princesas, como nos contos de fadas.
+            Malala cresceu entre os corredores da escola de seu pai, Ziauddin
+            Yousafzai, e era uma das primeiras alunas da classe. Quando tinha
+            dez anos viu sua cidade ser controlada por um grupo extremista
+            chamado Talibã. Armados, eles vigiavam o vale noite e dia, e
+            impuseram muitas regras. Proibiram a música e a dança, baniram as
+            mulheres das ruas e determinaram que somente os meninos poderiam
+            estudar. Mas Malala foi ensinada desde pequena a defender aquilo
+            em que acreditava e lutou pelo direito de continuar estudando. Ela
+            fez das palavras sua arma. Em 9 de outubro de 2012, quando voltava
+            de ônibus da escola, sofreu um atentado a tiro. Poucos acreditaram
+            que ela sobreviveria. A jornalista Adriana Carranca visitou o vale
+            do Swat dias depois do atentado, hospedou-se com uma família local
+            e conta neste livro tudo o que viu e aprendeu por lá. Ela
+            apresenta às crianças a história real dessa menina que, além de
+            ser a mais jovem ganhadora do prêmio Nobel da paz, é um grande
+            exemplo de como uma pessoa e um sonho podem mudar o mundo.
+          </p>
+          <button class="btnLMais">Ler Mais</button>
+          <button class="btnLMenos">Ler Menos</button>
+          <div class="btn-groups">
+            <button type="button" class="add-cart-btn">
+              <i class="fas fa-heart"></i>Adicionar aos Favoritos
+            </button>
+            <button type="button" class="buy-now-btn">
+              <i class="fas fa-solid fa-calendar-days"></i>Reservar Agora
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://kit.fontawesome.com/e0f8f28f17.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--Script-File-->
-    <script src="jsBookDetails/scriptProductDetails.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/e0f8f28f17.js" crossorigin="anonymous"></script>
+  <!--Script-File-->
+  <script src="jsBookDetails/scriptProductDetails.js"></script>
+</body>
+
 </html>
