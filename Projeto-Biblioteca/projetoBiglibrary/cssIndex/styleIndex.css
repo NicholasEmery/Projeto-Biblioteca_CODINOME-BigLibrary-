@@ -665,7 +665,7 @@ section {
 }
 
 /*==> footer começo <==*/
-.footer .box-container {
+/* .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
@@ -726,7 +726,7 @@ section {
 
 .footer .credit span {
   color: var(--red);
-}
+} */
 
 /*==> loader começo <==*/
 .loader-container {
