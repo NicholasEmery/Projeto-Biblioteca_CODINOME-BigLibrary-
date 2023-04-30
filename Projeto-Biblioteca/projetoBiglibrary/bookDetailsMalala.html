@@ -94,29 +94,29 @@
 
   <!-- login form --->
   <div class="form-background">
+    <div class="close-form"><i class="fa-solid fa-x"></i></div>
     <div class="form-container">
-      <div class="close-form"><i class="fa-solid fa-x"></i></div>
       <h2>Preencha os Dados a Abaixo:</h2>
-      <form>
-        <label for="name">Nome:</label>
-        <input class="allInput" id="name" type="text" maxlenght="10" required />
-        <label for="email">Email:</label>
-        <input class="allInput" id="email" type="email" required />
-        <label for="matricula">Número da Matricula:</label>
-        <input class="allInput" id="matricula" type="text" maxlength="10" required />
-        <label for="series">Série:</label>
-        <select class="allInput" id="series">
+      <form action="" method="post">
+        <label class="labelForm" for="name">Nome:</label>
+        <input class="allInput" id="name" name="name" type="text" maxlenght="10" required />
+        <label class="labelForm" for="email">Email:</label>
+        <input class="allInput" id="email" name="" type="email" required />
+        <label class="labelForm" for="matricula">Número da Matricula:</label>
+        <input class="allInput" id="matricula" name="" type="text" maxlength="10" required />
+        <label class="labelForm" for="series">Série:</label>
+        <select class="allInput" name="" id="series">
           <option value="1ºANO">1º ANO</option>
           <option value="2ºANO">2º ANO</option>
           <option value="3ºANO">3º ANO</option>
         </select>
-        <label for="turno">Turno:</label>
+        <label class="labelForm" for="turno">Turno:</label>
         <select class="allInput" name="" id="turno">
           <option value="Manha">Manhã</option>
           <option value="Tarde">Tarde</option>
           <option value="Noite">Noite</option>
         </select>
-        <label for="data1">Escolha uma data para reservar o seu livro:</label>
+        <label class="labelForm" for="data1">Escolha uma data para reservar o seu livro:</label>
         <input class="allInput" type="date" name="" id="data1" />
         <button class="buttonSubmit allInput" id="btnSubmit" type="submit">
           Enviar Dados

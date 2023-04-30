@@ -16,8 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  border: none;
   text-decoration: none;
   transition: all 0.2s linear;
   transition: none;
@@ -675,12 +673,17 @@ img {
 .form-background .close-form {
   /* margin-left: 530px; */
   position: absolute;
-  top: 255px;
-  right: 680px;
+  display: flex;
+  top: 10px;
+  /* top: 255px; */
+  /* right: 680px; */
+  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .form-background .close-form i {
   font-size: 25px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -688,7 +691,7 @@ img {
   width: 30%;
   padding: 30px 0px 30px 0px;
   border-radius: 20px;
-  background-color: rgb(146 162 175);
+  background-color: rgb(255 255 255);
   box-shadow: 0px 0px 7px 0px #444;
   display: flex;
   flex-direction: column;
@@ -711,10 +714,15 @@ img {
 .form-background .form-container .allInput {
   padding: 5px;
   border-radius: 5px;
+  outline-color: rgb(17, 160, 212);
 }
+
 
 .form-background .form-container .buttonSubmit {
   transition: background 0.5s, color 0.5s;
+  background-color: #b30e0e;
+  color: white;
+  border: none;
   font-size: 14px;
 }
 
@@ -723,9 +731,22 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.form-background .form-container .labelForm[for="name"], [for="email"], [for="matricula"] {
+  position: relative;
+  top: 28px;
+  margin-left: 10px;
+  transition: 0.5;
+}
+
+.form-background .form-container .allInput:focus ~ label[for="nome"], .allInput:valid ~ label[for="nome"] {
+  top: 0;
+}
+
 .form-background .form-container label {
   font-weight: bold;
   font-size: 14px;
+  width: max-content;
+  /* background-color: #c91955; */
 }
 
 

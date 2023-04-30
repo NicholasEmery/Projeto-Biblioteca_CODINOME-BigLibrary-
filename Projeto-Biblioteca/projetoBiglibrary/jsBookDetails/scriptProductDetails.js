@@ -111,3 +111,16 @@ const btnCloseImg = document.querySelector(".close-bgImg");
 btnCloseImg.addEventListener("click", () => {
   divBgImg.classList.remove("active");
 });
+
+
+// const focusLabel = document.querySelector(".labelForm");
+
+// const focusInputs = [
+//   inputNome = document.querySelector("#nome"),
+//   inputEmail = document.querySelector("#email"),
+//   inputMatricula = document.querySelector("#matricula"),
+// ];
+
+// focusInputs.addEventListener("click", () => {
+//   focusLabel.classList.add("active");
+// });
